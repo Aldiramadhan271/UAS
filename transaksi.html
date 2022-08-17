@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngemil Kriuk</title>
+    <!-- Untuk Css Vanila -->
+    <link rel="stylesheet" href="aset/css/style.css">
+    <link rel="stylesheet" href="aset/css/transaksi.css">
+    <!-- link google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link box icon -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body >
+            <!-- header-->
+            <nav>
+                <div class="container nav_container">
+                    <a href="index.html"><h4>NGEMIL KRIUK</h4></a>
+                    <ul class="nav_menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">Services</a></li>
+                        <li><a href="index.html">Menu</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><input type="text" class="input" >
+                            <a href=""><button class="btn"><i class='bx bx-search-alt-2'></i></button></a></div></li>
+                    </ul>
+                </div>
+            </nav>
+            
+
+            <section>
+                <div class="container">
+                    <form name="data-transaksi" class=" section-container">
+                        <div class="data-left ">                       
+                            <span>
+                                <label for="nama">Nama Lengkap :</label>
+                            </span>
+                            <input type="text" name="nama" placeholder="Masukan Nama Lengkap" id="name" autofocus>
+                            <span>
+                                <label for="alamat">Alamat</label>
+                            </span>
+                            <input type="text" id="alamat" placeholder="Masukan Alamat">
+                            <label for="">No Telp</label>
+                            <input type="number" id="telp" placeholder="Masukan No Telp">
+                            <label for="">Total</label>
+                            <input type="text"  id="hasil" disabled>
+                        </div>
+
+                        <div class="data-right">
+                            <label for="">Pesanan</label>
+                            <select name="pesanan" id="pesan" required>
+                                <option value="Moring">Moring</option>
+                                <option value="Basreng">Basreng</option>
+                                <option value="Sistik">Sistik</option>
+                            </select>
+                            <label for="">Variasi</label>
+                            <select name="variasi" id="variasi" required>
+                                <option value="Original">Original</option>
+                                <option value="Pedas">Pedas</option>
+                                <option value="Jagung Bakar">Jagung Bakar</option>
+                                <option value="Balado">Balado</option>
+                            </select>
+                            <label for="">Pembayaran</label>
+                            <div class="pembayaran">
+                                <span>
+
+                                
+                                <input type="radio" value="Bank" name="pembayaran" id="bank" >
+                                <label for="bank">Bank</label> 
+                                <input type="radio" value="ShopePay" name="pembayaran" class="margin-left" id="shopeePay">ShopeePay
+                                </span>
+                                <span >
+
+                                
+                                <input type="radio" value="Dana" name="pembayaran" id="dana">
+                                <label for="">Dana</label>
+                                
+                                <input type="radio" value="COD(Cash On Delivery)" class="margin-left" name="pembayaran" id="cod">
+                                <label for="">COD(Cash On Delivery)</label>
+                                </span>
+                            </div>
+                            <label for="">Jumlah Beli</label>
+                            <input type="number" name="jumlah" id="jumlah" onchange="penambahan()">
+                        </div>
+                    </form>
+                    <div class="payment">
+
+                        <button id="lanjut" type="button" class="btn-1">submit</button><input type="button" id="tampilkan" value="Tampilakan" class="btn-1">
+                        <table id="tampil" >
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+
+            <footer>
+                <div class="container footer-padding">
+                    <div class="footer-name">
+                        <h2>Aldi Ramadhan</h2>
+                    </div>
+                    <div class="footer-container">
+                            
+                            <div class="footer-content">
+                                <h4>Tautan</h4>
+                                <ul>
+                                    <li ><a href="index.html">Home</a></li>
+                                    <li ><a href="index.html">Services</a></li>
+                                    <li ><a href="index.html">Menu</a></li>
+                                    <li ><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="footer-content">
+                                <h4>Informasi</h4>
+                                <ul>
+                                    <li ><a href="#">Event</a></li>
+                                    <li ><a href="#">Contact Us</a></li>
+                                    <li ><a href="#">Privacy Policy</a></li>
+                                    <li ><a href="#">Terms Of Services</a></li>
+                                </ul>
+                            </div>
+                            
+                            
+                            <div class="footer-content">
+                                <h4>Social Media</h4>
+                                <ul>
+                                    <li ><a href="https://www.instagram.com/aldiramadhan271/">Instagram</a></li>
+                                    <li ><a href="https://github.com/aldiramadhan271">Github</a></li>
+                                    <li ><a href="https://www.tiktok.com/@aldi.ramadhan2">Tiktok</a></li>
+                                    <li ><a href="https://wa.me/089652743657">WhatsApp</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="footer-content">
+                                <h4>Contact Us</h4>
+                                <ul>
+                                    <li ><a href="#">0896-5274-3657</a></li>
+                                    <li ><a href="#">Ramadhanaldi60@gmail.com</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="footer-copyright">
+                    <small>&copy; Copyright By Aldi Ramadhan</small>
+                </div>
+            </footer>
+          
+<script src="aset/JavaScript/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+
+
+.section-contact{
+    background-color: #610c04;
+    padding: 3rem;
+    display: flex;
+    gap: 1.5rem;
+    border-top-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.content-img{
+    width: 25%;
+    height: 25%;
+}
+
+.content-img img{
+    border-top-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
+.content-data{
+    letter-spacing: 7px;
+    margin: auto 0;
+}

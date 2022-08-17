@@ -1,0 +1,108 @@
+
+
+.section-container{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.data-left{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    transform: rotate(-50%, -50%);
+    gap: .5rem;
+    padding: 40px 0 0 40px;
+}
+
+.data-left input{
+    width: 100%;
+    padding: 0 1rem;
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1rem 2rem rgb(0, 0, 0, .2);
+}
+
+
+
+.data-right{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 40px;
+}
+
+#hasil{
+    background-color: rgb(143, 143, 143);
+    border: none;
+    box-shadow: 0 1rem 2rem rgb(0, 0, 0, .2);
+}
+
+.data-right input,select{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    box-shadow: 0 1rem 2rem rgb(0, 0, 0, .2);
+    padding: 0 1rem;
+}
+
+.data-right option{
+    background-color: #000;
+}
+.pembayaran > span input{
+    flex-direction: row-reverse;
+}
+
+.pembayaran .margin-left{
+    margin-left: 2rem;
+}
+.pembayaran{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.payment input{
+    margin-left: 2rem;
+}
+
+.btn-1{
+    padding: .5rem;
+    cursor: pointer;
+    background-color: #900603;
+    border: none;
+    border-radius: 10%;
+    color: #fff;
+    transition: all 400ms ease;
+    margin-left: 2.5rem;
+}
+
+.btn-1:hover{
+    color: #fff;
+    background-color: #bc544b;
+}
+
+table{
+    
+    background-color: #610c04;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+tr, td{
+    padding: 1rem;
+    margin: 2rem;
+}
+
+td{
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+}
